@@ -13,7 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Teste Variavel
-        run: echo $env.URL $vars.URL
+        run: |
+          echo $env.URL
+          echo $vars.URL
+          echo $URL
+          echo "$env.URL"
+          echo "$vars.URL"
+          echo "$URL"
+
+
+
 
       - name: Teste Secrets
         env:
