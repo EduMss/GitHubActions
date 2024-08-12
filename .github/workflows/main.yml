@@ -14,9 +14,7 @@ jobs:
     steps:
       - name: Teste Variavel
         run: |
-          echo ${{env.URL}}
           echo ${{vars.URL}}
-          echo "${{env.URL}}"
           echo "${{vars.URL}}"
 
 
